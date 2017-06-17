@@ -19,6 +19,7 @@
     [super viewDidLoad];
     
     SFDualWaySlider *slider = [[SFDualWaySlider alloc] initWithFrame:CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, 70) minValue:0 maxValue:80 blockSpaceValue:2];
+    slider.progressRadius = 5;
     [slider.minIndicateView setTitle:@"不限"];
     [slider.maxIndicateView setTitle:@"不限"];
     slider.sliderValueChanged = ^(CGFloat minValue, CGFloat maxValue) {

@@ -1,14 +1,14 @@
 PODS:
-  - Masonry (0.6.4)
-  - SFDualWaySlider (0.9.3):
-    - Masonry (~> 0.6.4)
+  - Masonry (1.0.2)
+  - SFDualWaySlider (0.9.4):
+    - Masonry
 
 DEPENDENCIES:
   - SFDualWaySlider
 
 SPEC CHECKSUMS:
-  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
-  SFDualWaySlider: 3b54d166936183703028120dc2dbb0dd5e3abb5d
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  SFDualWaySlider: 4b23f5f0fbdf51d39085f1b727731a5474c0f3c4
 
 PODFILE CHECKSUM: c2717133917a03de5de3b0447394b6db9ee46458
 

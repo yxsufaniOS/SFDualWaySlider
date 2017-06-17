@@ -37,11 +37,11 @@
  @return 实例
  */
 - (instancetype)initWithFrame:(CGRect)frame minValue:(CGFloat)minValue maxValue:(CGFloat)maxValue blockSpaceValue:(CGFloat)blockSpaceValue{
-    return [self initWithFrame:frame image:[UIImage imageNamed:@"SFDualWaySlider.bundle/huakuai_icon"] minValue:minValue maxValue:maxValue blockSpaceValue:blockSpaceValue];
+    return [self initWithFrame:frame image:[UIImage imageNamed:@"huakuai_icon"] minValue:minValue maxValue:maxValue blockSpaceValue:blockSpaceValue];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame{
-    return [self initWithFrame:frame image:[UIImage imageNamed:@"SFDualWaySlider.bundle/huakuai_icon"] minValue:2.f maxValue:90.f blockSpaceValue:1.f];
+    return [self initWithFrame:frame image:[UIImage imageNamed:@"huakuai_icon"] minValue:2.f maxValue:90.f blockSpaceValue:1.f];
 }
 
 /**
