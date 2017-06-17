@@ -1,6 +1,6 @@
 # SFDualWaySlider
 
-==========
+
 
 双向滑块
 
@@ -29,20 +29,20 @@ slider.sliderValueChanged = ^(CGFloat minValue, CGFloat maxValue) {
 };
 
 slider.getMinTitle = ^NSString *(CGFloat minValue) {
-if (floor(minValue) == 0.f) {
-return @"不限";
-}else{
-return [NSString stringWithFormat:@"%.fK",floor(minValue)];
-}
+   if (floor(minValue) == 0.f) {
+       return @"不限";
+   }else{
+       return [NSString stringWithFormat:@"%.fK",floor(minValue)];
+   }  
 
 };
 
 slider.getMaxTitle = ^NSString *(CGFloat maxValue) {
-if (floor(maxValue) == 80.f) {
-return @"不限";
-}else{
-return [NSString stringWithFormat:@"%.fK",floor(maxValue)];
-}
+   if (floor(maxValue) == 80.f) {
+      return @"不限";
+   }else{
+      return [NSString stringWithFormat:@"%.fK",floor(maxValue)];
+   }
 };
 
 ````
