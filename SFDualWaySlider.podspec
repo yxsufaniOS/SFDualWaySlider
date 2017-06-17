@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SFDualWaySlider"
-  s.version      = "0.9.3"
+  s.version      = "0.9.4"
   s.summary      = "SFDualWaySlider"
   s.homepage     = "https://github.com/yxsufaniOS/SFDualWaySlider"
   s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.source_files = "SFDualWaySlider/*"
   s.requires_arc = true
   s.framework    = 'Foundation', 'UIKit'  
-  s.dependency  'Masonry' , '~> 0.6.4'
+  s.dependency  'Masonry'
 end
