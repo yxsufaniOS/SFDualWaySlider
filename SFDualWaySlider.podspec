@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SFDualWaySlider"
-  s.version      = "0.9.2"
+  s.version      = "0.9.3"
   s.summary      = "SFDualWaySlider"
   s.homepage     = "https://github.com/yxsufaniOS/SFDualWaySlider"
   s.license      = { :type => "MIT", :file => "LICENSE" }

@@ -14,9 +14,6 @@
 		54570D561EF3C3FB002CDCC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54570D541EF3C3FB002CDCC0 /* Main.storyboard */; };
 		54570D581EF3C3FB002CDCC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54570D571EF3C3FB002CDCC0 /* Assets.xcassets */; };
 		54570D5B1EF3C3FB002CDCC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54570D591EF3C3FB002CDCC0 /* LaunchScreen.storyboard */; };
-		54570D671EF3C47F002CDCC0 /* SFDualWayIndicateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54570D641EF3C47F002CDCC0 /* SFDualWayIndicateView.m */; };
-		54570D681EF3C47F002CDCC0 /* SFDualWaySlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 54570D661EF3C47F002CDCC0 /* SFDualWaySlider.m */; };
-		5480351F1EF4B4090036F916 /* SFDualWaySlider.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5480351E1EF4B4090036F916 /* SFDualWaySlider.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,11 +29,6 @@
 		54570D571EF3C3FB002CDCC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54570D5A1EF3C3FB002CDCC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54570D5C1EF3C3FB002CDCC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54570D631EF3C47F002CDCC0 /* SFDualWayIndicateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDualWayIndicateView.h; sourceTree = "<group>"; };
-		54570D641EF3C47F002CDCC0 /* SFDualWayIndicateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDualWayIndicateView.m; sourceTree = "<group>"; };
-		54570D651EF3C47F002CDCC0 /* SFDualWaySlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDualWaySlider.h; sourceTree = "<group>"; };
-		54570D661EF3C47F002CDCC0 /* SFDualWaySlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDualWaySlider.m; sourceTree = "<group>"; };
-		5480351E1EF4B4090036F916 /* SFDualWaySlider.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SFDualWaySlider.bundle; sourceTree = "<group>"; };
 		5F0DAA71880A06A41A8220EF /* Pods-SFDualWaySliderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFDualWaySliderDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SFDualWaySliderDemo/Pods-SFDualWaySliderDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,7 +73,6 @@
 		54570D4A1EF3C3FB002CDCC0 /* SFDualWaySliderDemo */ = {
 			isa = PBXGroup;
 			children = (
-				54570D621EF3C47F002CDCC0 /* SFDualWaySlider */,
 				54570D4E1EF3C3FB002CDCC0 /* AppDelegate.h */,
 				54570D4F1EF3C3FB002CDCC0 /* AppDelegate.m */,
 				54570D511EF3C3FB002CDCC0 /* ViewController.h */,
@@ -101,18 +92,6 @@
 				54570D4C1EF3C3FB002CDCC0 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		54570D621EF3C47F002CDCC0 /* SFDualWaySlider */ = {
-			isa = PBXGroup;
-			children = (
-				54570D631EF3C47F002CDCC0 /* SFDualWayIndicateView.h */,
-				54570D641EF3C47F002CDCC0 /* SFDualWayIndicateView.m */,
-				54570D651EF3C47F002CDCC0 /* SFDualWaySlider.h */,
-				54570D661EF3C47F002CDCC0 /* SFDualWaySlider.m */,
-				5480351E1EF4B4090036F916 /* SFDualWaySlider.bundle */,
-			);
-			path = SFDualWaySlider;
 			sourceTree = "<group>";
 		};
 		BAFCCFAF45AB797DD6257D35 /* Pods */ = {
@@ -187,7 +166,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				54570D5B1EF3C3FB002CDCC0 /* LaunchScreen.storyboard in Resources */,
-				5480351F1EF4B4090036F916 /* SFDualWaySlider.bundle in Resources */,
 				54570D581EF3C3FB002CDCC0 /* Assets.xcassets in Resources */,
 				54570D561EF3C3FB002CDCC0 /* Main.storyboard in Resources */,
 			);
@@ -248,10 +226,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54570D681EF3C47F002CDCC0 /* SFDualWaySlider.m in Sources */,
 				54570D531EF3C3FB002CDCC0 /* ViewController.m in Sources */,
 				54570D501EF3C3FB002CDCC0 /* AppDelegate.m in Sources */,
-				54570D671EF3C47F002CDCC0 /* SFDualWayIndicateView.m in Sources */,
 				54570D4D1EF3C3FB002CDCC0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
