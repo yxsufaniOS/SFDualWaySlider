@@ -32,7 +32,6 @@
         [_indicateLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.centerX.width.equalTo(self);
             make.height.equalTo(@21);
-            
         }];
         self.layer.anchorPoint = CGPointMake(0.5, 1);
         
