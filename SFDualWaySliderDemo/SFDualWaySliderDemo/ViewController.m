@@ -22,6 +22,11 @@
     slider.progressRadius = 5;
     [slider.minIndicateView setTitle:@"不限"];
     [slider.maxIndicateView setTitle:@"不限"];
+    slider.lightColor = [UIColor yellowColor];
+    slider.minIndicateView.backIndicateColor = [UIColor greenColor];
+    slider.maxIndicateView.backIndicateColor = [UIColor greenColor];
+    slider.indicateViewOffset = 10;
+    slider.indicateViewWidth = 80;
     slider.sliderValueChanged = ^(CGFloat minValue, CGFloat maxValue) {
         
     
