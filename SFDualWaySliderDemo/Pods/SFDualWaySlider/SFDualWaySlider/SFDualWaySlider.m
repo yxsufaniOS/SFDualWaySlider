@@ -76,8 +76,6 @@
         _darkColor         = kSF_HEXCOLOR(0xf2f2f2);
         _showAnimate       = YES;
         _progressWidth     = self.frame.size.width - _progressLeftSpace*2;
-        _indicateViewOffset = 3;
-        _indicateViewWidth  = 35;
         [self initSliderUI];
     }
     return self;
@@ -161,26 +159,6 @@
 - (void)setProgressRadius:(CGFloat)progressRadius{
     _progressRadius = progressRadius;
     _progressView.layer.cornerRadius = progressRadius;
-}
-
-- (void)setIndicateViewOffset:(CGFloat)indicateViewOffset{
-    _indicateViewOffset = indicateViewOffset;
-    [_minIndicateView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(_minButton.mas_centerY).offset(-_indicateViewOffset);
-    }];
-    [_maxIndicateView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(_maxButton.mas_centerY).offset(-_indicateViewOffset);
-    }];
-}
-
-- (void)setIndicateViewWidth:(CGFloat)indicateViewWidth{
-    _indicateViewWidth = indicateViewWidth;
-    [_minIndicateView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.width.mas_offset(_indicateViewWidth);
-    }];
-    [_maxIndicateView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.width.mas_offset(_indicateViewWidth);
-    }];
 }
 
 - (void)setLightColor:(UIColor *)lightColor{
@@ -283,18 +261,16 @@
     
     [_minIndicateView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(_minButton);
-        make.width.mas_offset(_indicateViewWidth);
-        make.height.mas_offset(28);
-        //_minIndicateView 修改了 anchorPoint 所以参照的是centerY
-        make.bottom.equalTo(_minButton.mas_centerY).offset(-_indicateViewOffset);
+        make.width.equalTo(@35);
+        make.height.equalTo(@28);
+        make.bottom.equalTo(_minButton.mas_top).offset(10);
     }];
 
     [_maxIndicateView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(_maxButton);
-        make.width.mas_offset(_indicateViewWidth);
-        make.height.mas_offset(28);
-        //_maxIndicateView 修改了 anchorPoint 所以参照的是centerY
-        make.bottom.equalTo(_maxButton.mas_centerY).offset(-_indicateViewOffset);
+        make.width.equalTo(@35);
+        make.height.equalTo(@28);
+        make.bottom.equalTo(_maxButton.mas_top).offset(10);
     }];
 }
 
