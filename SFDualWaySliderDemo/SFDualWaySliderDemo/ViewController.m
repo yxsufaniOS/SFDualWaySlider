@@ -50,8 +50,8 @@
     };
     
     slider.currentMinValue = 0;
-    slider.currentMaxValue = 15;
-    //分段 表示前部分占比80%  所在值范围为[0,30]  即剩下的 20%滑动距离 值范围为[50，80]
+    slider.currentMaxValue = 30;
+    //分段 表示前部分占比80%  所在值范围为[0,30]  即剩下的 20%滑动距离 值范围为[30，80]
     slider.frontScale = 0.8;
     slider.frontValue = 30;
     
