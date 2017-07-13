@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    SFDualWaySlider *slider = [[SFDualWaySlider alloc] initWithFrame:CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, 70) minValue:0 maxValue:40 blockSpaceValue:0];
+    SFDualWaySlider *slider = [[SFDualWaySlider alloc] initWithFrame:CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, 70) minValue:0 maxValue:80 blockSpaceValue:0];
     slider.progressRadius = 5;
     [slider.minIndicateView setTitle:@"不限"];
     [slider.maxIndicateView setTitle:@"不限"];
@@ -51,8 +51,9 @@
     
     slider.currentMinValue = 0;
     slider.currentMaxValue = 15;
-    slider.frontScale = 0.5;
-    slider.frontValue = 15;
+    //分段 表示前部分占比80%  所在值范围为[0,30]  即剩下的 20%滑动距离 值范围为[50，80]
+    slider.frontScale = 0.8;
+    slider.frontValue = 30;
     
     slider.indicateViewOffset = 10;
     slider.indicateViewWidth = 40;

@@ -195,12 +195,17 @@
 - (void)setFrontScale:(CGFloat)frontScale{
     if (frontScale >= 1 || frontScale <= 0) return;
     _frontScale = frontScale;
+    self.currentMaxValue = _currentMaxValue;
+    self.currentMinValue = _currentMinValue;
 }
 
 - (void)setFrontValue:(CGFloat)frontValue{
     if (frontValue >= _totalSpaceValue || frontValue <= 0) return;
     _frontValue = frontValue;
+    self.currentMaxValue = _currentMaxValue;
+    self.currentMinValue = _currentMinValue;
 }
+
 
 - (void)setProgressLeftSpace:(CGFloat)progressLeftSpace{
     if (progressLeftSpace == _progressLeftSpace) return;
