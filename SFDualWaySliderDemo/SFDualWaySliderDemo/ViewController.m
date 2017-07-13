@@ -18,20 +18,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    SFDualWaySlider *slider = [[SFDualWaySlider alloc] initWithFrame:CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, 70) minValue:0 maxValue:80 blockSpaceValue:2];
+    SFDualWaySlider *slider = [[SFDualWaySlider alloc] initWithFrame:CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, 70) minValue:0 maxValue:40 blockSpaceValue:0];
     slider.progressRadius = 5;
     [slider.minIndicateView setTitle:@"不限"];
     [slider.maxIndicateView setTitle:@"不限"];
     slider.lightColor = [UIColor yellowColor];
     slider.minIndicateView.backIndicateColor = [UIColor greenColor];
     slider.maxIndicateView.backIndicateColor = [UIColor greenColor];
-    slider.indicateViewOffset = 10;
-    slider.indicateViewWidth = 80;
+    
     slider.sliderValueChanged = ^(CGFloat minValue, CGFloat maxValue) {
         
     
     };
     
+    //设置标题，如果需要设置默认值 最好先写这个，否则设置默认值后不会第一时间触发
     slider.getMinTitle = ^NSString *(CGFloat minValue) {
         if (floor(minValue) == 0.f) {
             return @"不限";
@@ -48,6 +48,15 @@
             return [NSString stringWithFormat:@"%.fK",floor(maxValue)];
         }
     };
+    
+    slider.currentMinValue = 0;
+    slider.currentMaxValue = 15;
+    slider.frontScale = 0.5;
+    slider.frontValue = 15;
+    
+    slider.indicateViewOffset = 10;
+    slider.indicateViewWidth = 40;
+    
     [self.view addSubview:slider];
     
 }
